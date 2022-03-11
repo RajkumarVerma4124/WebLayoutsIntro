@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-flow: "column wrap";
+    align-items: center;
+    max-height: 100%;
+    min-width: 100px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 10px solid rgb(131, 181, 50);
+    border-radius: 2%;
+    width: 80%;
+}
+
+body:hover {
+    box-shadow: 0px 0px 15px #111;
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+}
+
+.headerContainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 10px;
+    color: tomato
+}
+
+.headerContainer:hover {
+    color: #ffad33
+}
+
+.footerContainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    color: lightgreen;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-wrap: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mainContentItem {
+    background: #cabe08;
+    text-align: left;
+    border-radius: 2%;
+}
+
+article {
+    margin: 10px;
+    padding: 10px;
+    background: rgb(231, 222, 154);
+}
+
+.sideBarLeftItem {
+    background: #ffad33;
+    border-radius: 2%;
+}
+
+.sideBarLeftItem:hover {
+    background: white;
+}
+
+img {
+    object-fit: cover;
+    flex-grow: 3;
+    width: 80%;
+    height: 80%;
+    margin: 10% auto;
+    border: 10px solid white;
+}
+
+img:hover {
+    box-shadow: 0px 0px 15px rgb(204, 204, 204);
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+}
+
+.sideBarRightItem {
+    background: #d84d0d;
+    border-radius: 2%;
+}
+
+.sideBarRightItem:hover {
+    background: white;
+}
+
+.sideBarItem {
+    flex: 1 0 0;
+    border: 0px solid green;
+}
+
+.mainContentItem {
+    flex: 3 0px;
+}
+
+.sideBarLeftItem {
+    order: 1;
+}
+
+.mainContentItem {
+    order: 2;
+}
+
+.sideBarRightItem {
+    order: 3;
+}
