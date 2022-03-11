@@ -39,6 +39,17 @@
   
   .media-object {
       margin-right: .4em;
+      padding: .8em;
+  }
+  
+  .media-object-left {
+      margin-right: .1em;
+      padding: 0 .8em;
+  }
+  
+  .media-object-right {
+      margin-left: .1em;
+      order: 1;
   }
   
   .media-body {
