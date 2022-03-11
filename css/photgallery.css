@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-flow: "column wrap";
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 10px solid rgb(131, 181, 50);
+    width: 65%;
+}
+
+body:hover {
+    box-shadow: 0px 0px 15px #111;
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px 0px;
+    justify-content: space-evenly;
+}
+
+.cards img {
+    margin: 10px;
+    border: 3px solid white;
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+    max-width: 25vw;
+}
+
+img {
+    display: block;
+    object-fit: contain;
+    flex-grow: 3;
+    width: 100%;
+    height: 100%;
+}
+
+img:hover {
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+}
+
+header {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    font-weight: bolder;
+    font-size: 35px;
+    padding: 10px;
+    justify-content: center;
+    color: yellowgreen
+}
