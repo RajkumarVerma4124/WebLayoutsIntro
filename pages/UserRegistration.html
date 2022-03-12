@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animated Login Form</title>
+    <link rel="stylesheet" type="text/css" href="../css/userregisteration.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="https://kit.fontawesome.com/3c6d82500d.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <img class="wave" src="../assets/wave.png">
+    <div class="container">
+        <div class="img">
+            <img src="../assets/bg.svg">
+        </div>
+        <div class="registeration-content">
+            <form action="UserRegistration.html">
+                <!--Main Header -->
+                <img src="../assets/avatar.svg">
+                <h2 class="title">Html Form Registeration</h2>
+                <!-- User Registeration Field For Name -->
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Username</h5>
+                        <input type="text" class="input" name="name" id="name" onfocus="this.placeholder = 'John Doe'" onblur="this.placeholder = ''">
+                    </div>
+                </div>
+                <a href="#">
+                    <error class="error" for="name" id="errorName"></error>
+                </a>
+                <!-- User Registeration Field For Password -->
+                <div class="input-div pass">
+                    <div class="i ">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Password</h5>
+                        <input type="password" name="password" id="password" class="input" onfocus="this.placeholder = 'Xyz@12345'" onblur="this.placeholder = ''">
+                    </div>
+                </div>
+                <a href="#">
+                    <error class="error" for="password" id="errorPassword"></error>
+                </a>
+                <!-- User Registeration Field For Email -->
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Email</h5>
+                        <input type="email" name="email" id="email" class="input" onfocus="this.placeholder = 'xyz123@abc.com'" onblur="this.placeholder = ''">
+                    </div>
+                </div>
+                <a href="#">
+                    <error class="error" for="email" id="errorEmail"></error>
+                </a>
+                <!--User Registeration Field For Url -->
+                <div class="input-div pass">
+                    <div class="i ">
+                        <i class="fa-solid fa-wifi"></i> </div>
+                    <div class="div">
+                        <h5>Url Input</h5>
+                        <input type="url" name="url" id="url" class="input" onfocus="this.placeholder = 'abc.com'" onblur="this.placeholder = ''">
+                    </div>
+                </div>
+                <!-- User Registeration Field For Number -->
+                <div class="input-div pass">
+                    <div class="i ">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Number Input</h5>
+                        <input type="tel" name="tel" id="tel" class="input" onfocus="this.placeholder = '123456'" onblur="this.placeholder = ''">
+                    </div>
+                </div>
+                <!-- User Registeration Field For Url -->
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Phone Number</h5>
+                        <input type="search" name="search" id="search" class="input" onfocus="this.placeholder = '91 9856321477'" onblur="this.placeholder = ''">
+                    </div>
+                </div>
+                <a href="#">
+                    <error class="error" for="tel" id="errorTel"></error>
+                </a>
+                <!-- User Registeration Field For Search Input -->
+                <div class="input-div pass">
+                    <div class="i ">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Search Input</h5>
+                        <input type="search" name="search" id="search" class="input" />
+                    </div>
+                </div>
+                <!-- User Registeration Field For Date And Time -->
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="div ">
+                        <h5>Date And Time</h5>
+                        <input type="datetime-local" name="dateTime" id="dateTime" class="input">
+                    </div>
+                </div>
+                <a href="# ">
+                    <error class="error" for="dateTime" id="errorDate"></error>
+                </a>
+                <!-- User Registeration For Salary Range -->
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="div">
+                        <h5></h5>
+                        <input type="range" name="salary" id="salary" min="25000" max="500000" step="100" value="200000" class="input">
+                        <output for="salary" class="salary_output" id="salary_output"></output>
+                    </div>
+                </div>
+                <input type="submit" class="btn" value="Sumbit">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/UserValidation.js"></script>
+</body>
+
+</html>
